@@ -1,1 +1,17 @@
 https://github.com/hiepnbui/whitehorse75/edit/master/list2watch
+select
+*
+from
+edwcnsmr.v_ps_fd_employees
+============
+let
+    Source = Oracle.Database("ORAEDW2P", [HierarchicalNavigation=true]),
+    EDWCNSMR = Source{[Schema="EDWCNSMR"]}[Data],
+    V_PS_FD_EMPLOYEES1 = EDWCNSMR{[Name="V_PS_FD_EMPLOYEES"]}[Data],
+    #"Removed Columns" = Table.RemoveColumns(V_PS_FD_EMPLOYEES1,{"NATIONAL_ID", "ADDRESS1", "ADDRESS2", "ADDRESS3", "CITY", "COUNTY", "STATE", "POSTAL", "HOME_PHONE", "SEX", "BIRTHDATE", "ETHNIC_GROUP", "DISABLED", "MILITARY_STATUS", "HIGHEST_EDUC_LVL", "CITIZENSHIP_STATUS", "SECURITY_CLEARANCE", "PROBATION_DT", "WORK_PHONE"}),
+    RowsToReturn = Table.SelectRows(#"Removed Columns", each ([DIVISION] = "22" or [DIVISION] = "23" or [DIVISION] = "27")),
+    #"Kept First Rows" = Table.FirstN(RowsToReturn,600000),
+    #"Filtered Rows" = Table.SelectRows(#"Kept First Rows", each ([MANAGER_ID] = "4666"))
+in
+    #"Filtered Rows"
+==========
