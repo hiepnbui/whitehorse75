@@ -4,6 +4,12 @@ select
 from
 edwcnsmr.v_ps_fd_employees
 ============
+============
+Gateway cluster name: DataGateWay_PROD
+Data source naem: ORAEDW2P_HB_CMU
+Data source type: Oracle
+Server: dboraedwp.fdic.gov
+=============
 let
     Source = Oracle.Database("ORAEDW2P", [HierarchicalNavigation=true]),
     EDWCNSMR = Source{[Schema="EDWCNSMR"]}[Data],
