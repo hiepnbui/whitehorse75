@@ -4,6 +4,16 @@ select
 from
 edwcnsmr.v_ps_fd_employees
 ============
+####ORAEDW2P########
+ORAEDW2P =  
+ (DESCRIPTION =    
+    (ADDRESS = (PROTOCOL = TCP)(HOST = dboraedwp.fdic.gov)(PORT = 1521))    
+      (CONNECT_DATA =      
+         (SERVER = DEDICATED)      
+        (SERVICE_NAME = ORAEDW2P)    
+   )  
+)
+
 ============
 Gateway cluster name: DataGateWay_PROD
 Data source naem: ORAEDW2P_HB_CMU
