@@ -1,3 +1,15 @@
+PL-900
+1.
+https://www.examtopics.com/exams/microsoft/pl-900/view/
+2.
+https://www.itexams.com/info/PL-900
+3.
+https://learn.microsoft.com/en-us/certifications/exams/pl-900/
+
+The first one is a free one and read that too to compare. The second one is a paid one and the best.
+Material for learning but only need to read thru quickly to get an idea
+
+
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20231.23.0417.1258                               -->
