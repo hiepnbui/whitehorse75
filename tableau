@@ -1,3 +1,13 @@
+select distinct
+     a.emplid emplid
+   , a.name name
+  from
+   edw.staffing_tbl a
+where
+ a.eff_status = 'a'
+ and a.effdt = (select max(a2.effdt) from edw.staffing_tbl a2 where a2.emplid =  a.emplid)
+ and a.effseq = (select max(a3.effseq) from  edw.staffing_tbl a3 where a3.emplid =  a.emplid and a3.effdt =  a.effdt)
+
 https://github.com/DaxStudio/DaxStudio/tree/master/src/DAXEditor
 
 https://community.tableau.com/s/question/0D54T00000C6hg6SAB/how-to-create-a-calculated-field-to-show-employee-groupingcombinations
