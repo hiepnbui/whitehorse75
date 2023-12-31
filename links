@@ -1,2 +1,4 @@
+https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=a8f7a65c-f5ba-4859-b2d6-df772c264e9d&scope=openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Fmake.powerapps.com%2Fauth&client-request-id=ac037ea9-a120-40cd-941d-17f37a8edba3&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.37.1&client_info=1&code_challenge=CKbEsozTlMxTUqJ7tbnG1gCVxrBhQHc0aKoEnnD1aLE&code_challenge_method=S256&nonce=d3954f46-f18d-431a-b588-ee370d6ef972&state=eyJpZCI6IjE5YmJjNzllLTFlYTMtNDZjZC04MDkwLTM3Y2VmYTkwMTFiMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D&sso_reload=true
+
 https://www.alphasoftware.com/build-apps-for-free-community-edition-download
 https://forwardforever.com/power-platform-managing-data-sources-with-environment-variables/
